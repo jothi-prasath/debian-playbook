@@ -1,0 +1,7 @@
+---
+- name: Update all packages
+  become: true
+  ansible.builtin.apt:
+    upgrade: full
+  changed_when: false
+  when: update | default(false) | bool

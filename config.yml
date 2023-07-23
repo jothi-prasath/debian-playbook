@@ -1,0 +1,53 @@
+---
+update: true
+zram: true
+debian_nonfree: true
+
+packages:
+  - wget 
+  - git 
+  - ssh 
+  - tmux
+  - gpg
+  - pass
+  - apt-transport-https
+  - bash-completion
+  - zip
+  - xfonts-utils
+  - python3
+  - grub-customizer
+  - geary
+  - gnome-browser-connector
+  - webext-browserpass 
+  - chrome-gnome-shell
+  - gnome-shell-extensions
+  - gnome-shell-extension-manager
+  - mpv
+  - powertop
+  - lm-sensors
+  - telegram-desktop
+  - acpi
+  - linux-cpupower
+  - tlp
+  - gstreamer1.0-vaapi 
+  - aria2
+  - build-essential
+  - libavcodec-extra
+  - mangohud
+  - hugo
+  - ffmpeg
+  - nodejs
+  - vlc
+  - dkms
+  - zram-tools
+
+amd_packages:
+  - firmware-amd-graphics 
+  - libgl1-mesa-dri 
+  - libgl1-mesa-dri:i386
+  - libglx-mesa0 
+  - libglx-mesa0:i386 
+  - mesa-vulkan-drivers 
+  - mesa-vulkan-drivers:i386 
+  - xserver-xorg-video-all
+  - firmware-amd-graphics

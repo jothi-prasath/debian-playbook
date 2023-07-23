@@ -1,0 +1,7 @@
+---
+- name: Install gpu packages
+  become: true
+  ansible.builtin.apt:
+    name: "{{ amd_packages }}"
+    state: present
+  changed_when: false

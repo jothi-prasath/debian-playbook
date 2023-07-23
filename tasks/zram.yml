@@ -1,0 +1,10 @@
+---
+- name: Configuring zram
+  become: true
+  copy:
+    dest: "/etc/default/zramswap"
+    content: |
+      ALGO=zstd
+      PERCENT=200
+  changed_when: false
+  when: zram | default(false) | bool

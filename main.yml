@@ -1,0 +1,14 @@
+---
+- name: Configure host.
+  hosts: all
+
+  vars_files:
+      - config.yml
+  
+  tasks:
+    - import_tasks: tasks/repos.yml
+    - import_tasks: tasks/update.yml
+    - import_tasks: tasks/upgrade.yml
+    - import_tasks: tasks/packages.yml
+    - import_tasks: tasks/amd_packages.yml
+    - import_tasks: tasks/zram.yml
